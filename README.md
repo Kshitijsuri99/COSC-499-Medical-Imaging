@@ -8,10 +8,10 @@ Authors:
 3. Jace Lai
 
 
-#Purpose 
+# Purpose 
 The project aims at creating an automated x-ray image pipeline, to provide mammography scans to experts to analyze using AI for cancer prediction of the breast tissue. 
 
-
+# Extra
 
 To understand the project better please take a look at the DesignDocument folder and Read the high level section.
 
