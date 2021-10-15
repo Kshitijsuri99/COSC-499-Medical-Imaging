@@ -1,0 +1,30 @@
+TMI Group 2:
+
+1. (Daniil): Great definitions, I felt like you did a great job providing background.
+
+2. (Daniil): You mention Orthanc is a DICOM server? This is partially what it is but would it be better to describe this as a PACS server? As PACS is more encompassing then just saying DICOM server?
+
+3. (Daniil): In addition to feedback point 2, it might make sense to add the definition of what a PACS server is. 
+
+4. (Daniil): Adding to this, there is a discrepancy in your presentation, 
+	⁃	Brain calls Orthanc is a PACS
+	⁃	Raouf calls it a DICOM server
+
+This is a nit but thought you guys should know.
+
+5. (Daniil): The architecture looks great but there is a part that is confusing to me:
+	⁃	Why is there an arrow from anonymize data to find matching records?
+	⁃	Why would you be trying to match records with an anonymized file?
+	⁃	When I see the diagram I assume anything that passes through the anonymize data part I assume it to be anonymized. In this case it is confusing to me because where are you storing PHI (Patient Health Information)? Because the arrow goes directly from anonymize data to data base. Therefore I assume no PHI is hitting the database.
+	⁃	It is unclear from the diagram if you have two Orthanc servers. If they are the same why are they two different shapes?
+	⁃	Ok as I look at the diagram more I see the PHI can flow to the file system. 
+	⁃	Shouldn’t there be an arrow going back to Orthanc? How does a researcher download the anonymized files? Because the arrow only goes one way.
+
+6. (Daniil): I like the decision for c++
+
+7. (Daniil): Great test strategy! Once comment, I feel like you could add some edge cases that we should be thinking about regarding system tests. As we already know some system tests that we will be running example:
+	⁃	What happens if we have the same patient id but different PHI?
+	⁃	What happens if same patient ID same PHI except for a small typo?
+	⁃	what happens if same PHI but different patient ID?
+
+(Daniil): Overall really nicely done good job! 
