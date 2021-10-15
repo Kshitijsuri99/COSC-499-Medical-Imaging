@@ -66,3 +66,19 @@ MIM Team 1:
 7. Speaking of databases, if you have a lot of records coming though (thousands) how will one script handle this? What kind of data base will you use relational or non-relational? What kind of availability are you guys looking at? How much downtime is required to adjust the script, or will it be self adjusting? Can you run multiple comparisons in parallel? Have you thought about parallelizing this? 
 
 Great presentaition, I know you only have 10 min but I feel like there could have been more details regarding the mamograms, what they are, and how you are checking them. I feel like someone who does not know about DICOM would be confused what exactly you are comparing.
+
+MIM Team 0
+
+1. I feel like you glossed over important details such as, what is a DICOM file? 
+
+2. What is in a mammogram file? You weren’t very explicit where these fields are located or how the file is structured or what a DICOM file is which is very important in order to understand how exactly you will be comparing fields. 
+
+3. I am assuming you are comparing PHI (Patient Health Information) could you be more clear about this? What exact fields do you assume will usually be off? Many of those fields are not manual entry, therefore you should be expecting certain fields to be off more times than others? For example: it is unlikely the date and imaging modality fields will be wrong. I think you should be specific about this.
+
+4. What is the max throughput here? Will one script be able to handle thousands of records? Can you run them in parallel? Why or why not? 
+
+5. What kind of database do you plan to use and what kind of availability do expect? Will it be relational or non-relational? 
+
+6. If you only plan on checking matches with PHI why not discard the image altogether and store it in a separate database with a cross-walk GUID? That way you have a smaller data file to make comparisons increasing the speed of the comparisons.
+
+Great presentation overall!
