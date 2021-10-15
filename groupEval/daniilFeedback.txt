@@ -28,3 +28,21 @@ This is a nit but thought you guys should know.
 	⁃	what happens if same PHI but different patient ID?
 
 (Daniil): Overall really nicely done good job! 
+
+TMI Group 0 Feedback:
+
+1. (Daniil): Love the background music! Also nice background for slides, we have the same one :)
+
+2. (Daniil): You call Orthanc a DICOM server wouldn’t a better term be that it is a PACS server? This is a nit but from my understanding PACS server is more encompassing term then DICOM server.
+
+3. (Daniil): You mention briefly what we are trying to replace but you only state that it is old and outdated. Just because something is old does not mean it should be replaced. My feedback here is you should a more explanation of the existing problem and what we are trying to fix. From watching the slide it is unclear why your new system is better than the old one.
+
+4. (Daniil): I have a nit for your DFD:
+	⁃	The machines send the DICOM files already, what I would do is instead of having the arrows say “Sends clinical data” I would say “Sends DICOM files” then delete the “DICOM files” box and point the arrows directly to the server. 
+
+5. (Daniil): It is unclear from your DFD level 1 where you will be storing the PHI (Patient Health Information). 
+I see you are showing the anonymization process but what about the cross-referencing process. You touch on it in the presentation but it is not showing in the DFD. 
+
+6. (Daniil): Have you considered the loss of speed that you might get from using python? Yes python has many libraries but as it hides implementation of those libraries don’t you think you will not be able to maximize speed of your database performance? Isn’t Orthanc already optimized for C++? Pandas and Numpy are also slower because they hide the details and are written in C don’t you think it would be better to stick with C/C++ as it will be able to maximize the cross-referencing you will be doing of the DICOM files? Thos are big files and there will be a lot of them, also deletion speed of records is going to be very important, take a look at Orthanc/books/scalability to see how deletion needs to be optimized.
+
+Overall very well done, but I would like to hear more of a defence for why you are choosing python :) 
