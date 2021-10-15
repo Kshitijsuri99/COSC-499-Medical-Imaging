@@ -82,3 +82,18 @@ MIM Team 0
 6. If you only plan on checking matches with PHI why not discard the image altogether and store it in a separate database with a cross-walk GUID? That way you have a smaller data file to make comparisons increasing the speed of the comparisons.
 
 Great presentation overall!
+
+AGMEETING Team 2:
+
+
+1. It was unclear what kind of database will you be using, will it be relational or non-relational and why will you go that route?
+
+2. I am guessing your system needs to have high availability? You should be more explicit about this. How will it handles records? How much downtime is too much downtime?\
+
+3. How many records do you plan on having, thousands, millions? Do you plan on partitioning you database? Will you utilize distributed computing, what about cloud computing? Why or why not? 
+
+AGMEETING Team 1:
+
+1. How do you plan on managing availability? What is the maximum amount of downtime you allow?
+
+2. What kind of database will you be using? Relational or non-relational?
