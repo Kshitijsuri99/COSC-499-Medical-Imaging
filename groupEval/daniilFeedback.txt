@@ -46,3 +46,23 @@ I see you are showing the anonymization process but what about the cross-referen
 6. (Daniil): Have you considered the loss of speed that you might get from using python? Yes python has many libraries but as it hides implementation of those libraries don’t you think you will not be able to maximize speed of your database performance? Isn’t Orthanc already optimized for C++? Pandas and Numpy are also slower because they hide the details and are written in C don’t you think it would be better to stick with C/C++ as it will be able to maximize the cross-referencing you will be doing of the DICOM files? Thos are big files and there will be a lot of them, also deletion speed of records is going to be very important, take a look at Orthanc/books/scalability to see how deletion needs to be optimized.
 
 Overall very well done, but I would like to hear more of a defence for why you are choosing python :) 
+
+MIM Team 1:
+
+1. (Daniil): Great problem description.
+
+2. How will the matching be done? Is there a database involved in this process? Where are the files stored? 
+
+3. I understand the minimum to send is two but what is the maximum? Can I send 100 files to be checked? Can I send a whole study? What is the cap and why does it exist? How much will the speed of your system be affected by sending a large amount of DICOM files to be matched?
+
+4. I am guessing this is done with DICOM images right? It is sort of unclear in this case because then you are not actually comparing images but PHI (Patient Health Information), maybe you should be more explicit about this?
+
+5. You show that the data is sent in the diagram but some questions are unclear:
+- sent from where, from a PACS? 
+- And how is it sen, Via DICOM protocol?
+
+6. Maybe this is a misunderstanding on my end but why are you using AI? If all you have to do is check if there is a match why do you need AI? Because unless you plan on actually modifying the actual PHI all you need is a relational database with a really high read speed and a comparison software? I could see using AI if you will modify PHI but I don’t think our health care system will allow this because it must be done usually by a medical professional. 
+
+7. Speaking of databases, if you have a lot of records coming though (thousands) how will one script handle this? What kind of data base will you use relational or non-relational? What kind of availability are you guys looking at? How much downtime is required to adjust the script, or will it be self adjusting? Can you run multiple comparisons in parallel? Have you thought about parallelizing this? 
+
+Great presentaition, I know you only have 10 min but I feel like there could have been more details regarding the mamograms, what they are, and how you are checking them. I feel like someone who does not know about DICOM would be confused what exactly you are comparing.
