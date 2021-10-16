@@ -21,3 +21,9 @@ WooWoo Team 2 (Kshitij)
 (Kshitij) Will any of the information being exchanged  between the healer and the user be recorded and if yes is there a specific amount of days you guys will save the information for?
 
 (Kshitij) What kind of stack will be used for the search engine in specific as the part about the search engine wasn’t explained in depth?
+
+WooWoo Team 1 (Kshitij)
+
+(Kshitij) What steps are you going to ensure that the data of both the clients and healers are secure from breaches? In particular financial information and health records.
+
+(Kshitij) Could you please elaborate more on the steps as the data didn’t seem sufficient enough to support the Data Flow Diagrams
