@@ -27,3 +27,9 @@ WooWoo Team 1 (Kshitij)
 (Kshitij) What steps are you going to ensure that the data of both the clients and healers are secure from breaches? In particular financial information and health records.
 
 (Kshitij) Could you please elaborate more on the steps as the data didn’t seem sufficient enough to support the Data Flow Diagrams
+
+LIMS Team 0 (Kshitij)
+	
+(Kshitij) The DFDs explanation should also be available on slides at least that what I think as it should be a part of documentation. Are you planning on adding more information about it later?
+
+(Kshitij) Are you planning on using a different payment system as there are quite a lot available that offer better security?
