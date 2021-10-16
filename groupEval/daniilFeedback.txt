@@ -97,3 +97,17 @@ AGMEETING Team 1:
 1. How do you plan on managing availability? What is the maximum amount of downtime you allow?
 
 2. What kind of database will you be using? Relational or non-relational?
+
+AGMEETING Team 0:
+
+1. (Daniil): Could you be more clear what Roberts Rules are? I don’t know what those are, and I feel like it is important to know and it would probably answer my second question which is:
+
+2. (Daniil): Why are you making this? What is the point for the client to have an in house built software? Why not just use something like Microsoft Outlook, or Zoo, which is very good at planning meetings? I am sure there is an answer to this but from your presentation I don’t understand the purpose of building this.
+
+3. (Daniil): Adding to point 2 it would be more informative if you spent a little more time describing what the problem is that you are solving with AGMEETING.
+
+LIMS Team 2
+
+1. (Daniil): What kind of Amazon RDS are you planning to use? Oracle, Aurora etc.? What is the clear choice and why was it chosen this way?
+
+2. (Daniil): Is there a reason you chose a relational vs a non-relational database model?
