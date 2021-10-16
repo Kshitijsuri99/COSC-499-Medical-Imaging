@@ -9,3 +9,9 @@ Ethics Dashboard Team 2 (Kshitij)
 (Kshtij) The project involves quite a lot of testing and do you think implementing CI/CD would improve the efficiency of the project?
 
 (Kshitij) The information on Database wasn’t enough. Is it possible to talk about it a bit more like is it going to be a relational database and how are you planning on securing the personal information using sql as in what type of encryption are you thinking?
+
+Ethics Dashboard Team 1 (Kshitij)
+
+(Kshitij) There is no mention of security measures that will be taken to make sure that academic data of student will remain confidential. Are you planning on talking about it a bit more?
+
+(Kshitij) For in house reporting are you guys gonna use premade software or you planning on building one from scratch? Because there are pretty good market solutions available that can be integrated.
