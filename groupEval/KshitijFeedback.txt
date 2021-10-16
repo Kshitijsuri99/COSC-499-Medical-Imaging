@@ -4,3 +4,8 @@ LIMS Team 1 (Kshitij)
 
 (Kshitij): Has the client informed you about what kind of cloud computing compatibility he is looking for?
 
+Ethics Dashboard Team 2 (Kshitij)
+
+(Kshtij) The project involves quite a lot of testing and do you think implementing CI/CD would improve the efficiency of the project?
+
+(Kshitij) The information on Database wasn’t enough. Is it possible to talk about it a bit more like is it going to be a relational database and how are you planning on securing the personal information using sql as in what type of encryption are you thinking?
