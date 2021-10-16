@@ -1,0 +1,34 @@
+Cyclops Team 0
+1. (Jace) The introduction to the project is informative and descriptive, while keeping it simple enough that someone not on the team can understand what the project is really about. It explains cyclops briefly before continuing to talk about the rest of the project.
+2.(Jace) The user groups mentioned are detailed, however it does not explain why those users were taken. Why were the target users picked?
+3.(Jace) Why would synchronizing text throughout the apps be helpful as an additional requirement?
+Cyclops Team 1
+1.(Jace) Sometimes scrolling through the screen up and down that frequently can cause confusion such as between 0.45-1.00 minute mark.
+2.(Jace) How do you plan on making the application on both Android and Apple cross compatible?
+3.(Jace) The DFD’s did not have as much info as I would have expected, did they consider that putting more detailed information would help identify the flow better?
+4.(Jace) Milestone looked relatively confusing at 5.13 min.
+ Cyclops Team 2
+1.(Jace) I enjoyed that they did not simply read off the slides when possible.
+2. How do you determine the access levels to the database for the admin user and normal user? What features don’t you allow for regular users?
+3.(Jace) What data security standards are normally defined by your client?
+ 
+Checklick Team 0
+1.(Jace) The window on the side of the first page was too small for me to read, but the rest of the presentation was clean and simple.
+2. (Jace) What type of progress do you track with Checklick?
+3. (Jace) What types of privileges would the evaluators be getting? Who are examples of evaluators?
+4. (Jace) The DFD looks good, very well planned out and easy to follow.  
+5. (Jace) Why do you need Ruby on Rails? What is the purpose of Ruby on Rails for?
+
+Checklick Team 1
+1.(Jace) DFD looks overly complicated, do you think it could be simplified by grouping certain things together?
+2.(Jace) Why did you pick Ruby on Rails instead of React? What were the benefits or/and disadvantages of using React?
+3.(Jace) How was the time for a page to load in 3 seconds picked? Was a survey done to find the optimal time for website performance?
+
+Checklick Team 2
+1.(Jace) How did you determine what to take out of your original scope since your client had said the scope was too wide?
+2.(Jace) Why was PostgresSQL chosen over mySQL? What were the benefits of PostgresSQL for your software versus mySQL?
+
+Ethics Dashboard Group 0
+
+1.(Jace) What is a “my progress page” mentioned at 0.50min? I have no idea what type of progress it's tracking.
+2.(Jace) For the third milestone, how is a student's success calculated? What are the elements and variables used to calculate such a thing?
