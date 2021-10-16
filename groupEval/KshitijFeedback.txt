@@ -1,0 +1,6 @@
+LIMS Team 1 (Kshitij)
+
+(Kshitij) How are you planning on implementing the server security for sample tracking as I feel that security will be an issue with such big databases. 
+
+(Kshitij): Has the client informed you about what kind of cloud computing compatibility he is looking for?
+
