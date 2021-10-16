@@ -33,3 +33,9 @@ LIMS Team 0 (Kshitij)
 (Kshitij) The DFDs explanation should also be available on slides at least that what I think as it should be a part of documentation. Are you planning on adding more information about it later?
 
 (Kshitij) Are you planning on using a different payment system as there are quite a lot available that offer better security?
+
+WooWoo Team 0 (Kshitij)
+
+(Kshitij) For the helper bot do you think google dialogflow would be a good software to integrate with the bot?
+
+(Kshitij) “Building a Better Backend” seems like a very vague term to use. Are you planning to change the stack, improve security or something else?
