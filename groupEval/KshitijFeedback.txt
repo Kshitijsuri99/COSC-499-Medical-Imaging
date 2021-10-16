@@ -15,3 +15,9 @@ Ethics Dashboard Team 1 (Kshitij)
 (Kshitij) There is no mention of security measures that will be taken to make sure that academic data of student will remain confidential. Are you planning on talking about it a bit more?
 
 (Kshitij) For in house reporting are you guys gonna use premade software or you planning on building one from scratch? Because there are pretty good market solutions available that can be integrated.
+
+WooWoo Team 2 (Kshitij) 
+
+(Kshitij) Will any of the information being exchanged  between the healer and the user be recorded and if yes is there a specific amount of days you guys will save the information for?
+
+(Kshitij) What kind of stack will be used for the search engine in specific as the part about the search engine wasn’t explained in depth?
