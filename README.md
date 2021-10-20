@@ -27,4 +27,9 @@ The image is sent to a medical server via a secure medical image protocol called
 
 Once the files are on the research server, they are anonymized. The purpose is to open these images to scientists to analyze, but these DICOM files must not contain any Patient Health Information (PHI). There are then two servers. One contains the anonymized DICOM images and the other contains only patient metadata, which is kept confidential. The anonymized DICOM images are then released for research.
 
+# Proposed solution
+
+The proposed process will set up two new servers using open-source software called Orthanc. Once the mammography scan is complete the DICOM file will be sent to the first Orthanc server (via DIMSE protocol) which will store the confidential metadata, anonymize the DICOM file, and create a random new ID to connect the patient health information to the anonymized DICOM file. The anonymized DICOM file is then sent to another Orthanc server. This server has a GUI (Graphical User Interface) which will be used by researchers to download the x-ray scans and perform analysis. 
+
+This project will save Dr. Rajapakshe time, and allow for a faster release of new anonymized DICOM files. Instead of having to wait 6 months for new scans, the scans will be available to research almost as soon as the scan itself is complete.
 
