@@ -18,3 +18,21 @@ To understand the project better please take a look at the DesignDocument folder
 
 You can also view the DFD folder to see the data flow diagrams. The flowcharts explain the dataflow of the mammograph and patient information from the Patient to the user who is trying to retrieve the information.
 The Level 0 flowchart gives a general understanding whereas in Level 1 we get a more detailed understading of all the steps involved in the dataflow.
+
+# Problem Statement
+
+Currently, a female patient attends a clinic to receive a mammogram. After an x-ray scan is complete an image file is created called a DICOM file. DICOM files contain the actual image as well as patient metadata. Patient metadata includes identifiable patient information such as, name, sex, birth date, patient id, clinic id, etc, and contains non-identifiable information such as time of the scan, type of machine for scan, image view, etc.  
+
+The image is sent to a medical server via a secure medical image protocol called DIMSE. Those images are then stuck on that physical server in the clinic. Dr. Rajapakshe then has to physically drive to the clinic (approximately every 6 months), remove the hard drive, download the data onto a research server, delete the old DICOM files from the hard drive, and finally, drive the empty hard drive back to the clinic. 
+
+Once the files are on the research server, they are anonymized. The purpose is to open these images to scientists to analyze, but these DICOM files must not contain any Patient Health Information (PHI). There are then two servers. One contains the anonymized DICOM images and the other contains only patient metadata, which is kept confidential. The anonymized DICOM images are then released for research.
+
+# Proposed solution
+
+The proposed process will set up two new servers using open-source software called Orthanc. Once the mammography scan is complete the DICOM file will be sent to the first Orthanc server (via DIMSE protocol) which will store the confidential metadata, anonymize the DICOM file, and create a random new ID to connect the patient health information to the anonymized DICOM file. The anonymized DICOM file is then sent to another Orthanc server. This server has a GUI (Graphical User Interface) which will be used by researchers to download the x-ray scans and perform analysis. 
+
+This project will save Dr. Rajapakshe time, and allow for a faster release of new anonymized DICOM files. Instead of having to wait 6 months for new scans, the scans will be available to research almost as soon as the scan itself is complete.
+
+# High Level Architecture
+
+
