@@ -1,6 +1,6 @@
 Kshitij
 	Pros
-		He knows 		
+				
 	Cons
 	
 Daniil
@@ -9,5 +9,5 @@ Daniil
 		Before our group meeting, we had some miscommunication which caused a conflict, which is now resolved!
 		He is knowledgable about our project and goes out of his way to search for various alternative solutions to our problems which is amazing.
 	Cons
-	
+		Sometimes does too much work leaving us with less to do, or eats into our specific roles <- this has been resolved.
 	
