@@ -5,7 +5,13 @@ Kshitij
 		Knowledgeable about DFD structures, and has good programming knowledge.		
 	Cons
 		
-	
+	Evaluations
+		Contribution to group goals: 4
+		Quality of Individual contributions: 4
+		Effort and Participation: 3
+		Consideration of others: 4
+		Contribution of knowledge: 4
+		Working and sharing with others: 4
 Daniil
 	Pros
 		He has major contributions to our group project and works hard to get on top of the questions we may have for our client
@@ -14,3 +20,10 @@ Daniil
 	Cons
 		Sometimes does too much work leaving us with less to do, or eats into our specific roles <- this has been resolved.
 	
+	`Evaluations
+		Contribution to group goals: 5
+		Quality of Individual contributions: 5
+		Effort and Participation:4
+		Consideration of others:2
+		Contribution of knowledge: 4
+		Working and sharing with others: 3
