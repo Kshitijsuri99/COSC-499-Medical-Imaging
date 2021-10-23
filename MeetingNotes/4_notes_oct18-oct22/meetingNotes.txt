@@ -1,0 +1,25 @@
+Q&A:
+1. How scalable?
+Must be very scalable and adaptable
+Currently, there are around 2 million files, should be able to handle much more Must be able to scale quickly to millions of more files
+The system should be able to be portable to other hospitals
+Must be able to handle a million requests per day.
+
+2. How many DICOM files?
+Millions of files are currently being stored (2 million)
+Thousands of files are being sent per day to the server
+
+3. How important is database read speed?
+Very important, we must be able to cross-reference files when new files come in.
+
+4. Will DICOM standard change? Will new fields be added? (non-relational vs relational)
+Standard will not change but patients will have additional doctor notes attached to them which should be stored.
+Non-relational will be much more accompanying to this change
+
+5. Is the number of DICOM images in the millions or less?
+
+Should we use sharding?
+How many GB, TB, PB, should the database be able to handle per day?
+Any requirement for system availability? 
+How does DICOM handle writes?
+
