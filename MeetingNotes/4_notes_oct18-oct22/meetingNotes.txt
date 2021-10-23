@@ -5,3 +5,7 @@ Currently, there are around 2 million files, should be able to handle much more 
 The system should be able to be portable to other hospitals
 Must be able to handle a million requests per day.
 
+2. How many DICOM files?
+Millions of files are currently being stored (2 million)
+Thousands of files are being sent per day to the server
+
