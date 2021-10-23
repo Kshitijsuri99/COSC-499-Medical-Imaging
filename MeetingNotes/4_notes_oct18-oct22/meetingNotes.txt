@@ -12,3 +12,7 @@ Thousands of files are being sent per day to the server
 3. How important is database read speed?
 Very important, we must be able to cross-reference files when new files come in.
 
+4. Will DICOM standard change? Will new fields be added? (non-relational vs relational)
+Standard will not change but patients will have additional doctor notes attached to them which should be stored.
+Non-relational will be much more accompanying to this change
+
