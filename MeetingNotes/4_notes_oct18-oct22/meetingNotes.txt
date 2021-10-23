@@ -9,3 +9,6 @@ Must be able to handle a million requests per day.
 Millions of files are currently being stored (2 million)
 Thousands of files are being sent per day to the server
 
+3. How important is database read speed?
+Very important, we must be able to cross-reference files when new files come in.
+
