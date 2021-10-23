@@ -16,3 +16,5 @@ Very important, we must be able to cross-reference files when new files come in.
 Standard will not change but patients will have additional doctor notes attached to them which should be stored.
 Non-relational will be much more accompanying to this change
 
+5. Is the number of DICOM images in the millions or less?
+
