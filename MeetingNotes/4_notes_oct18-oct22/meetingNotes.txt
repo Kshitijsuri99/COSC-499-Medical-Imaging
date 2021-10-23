@@ -1,0 +1,7 @@
+Q&A:
+1. How scalable?
+Must be very scalable and adaptable
+Currently, there are around 2 million files, should be able to handle much more Must be able to scale quickly to millions of more files
+The system should be able to be portable to other hospitals
+Must be able to handle a million requests per day.
+
