@@ -18,3 +18,8 @@ Non-relational will be much more accompanying to this change
 
 5. Is the number of DICOM images in the millions or less?
 
+Should we use sharding?
+How many GB, TB, PB, should the database be able to handle per day?
+Any requirement for system availability? 
+How does DICOM handle writes?
+
