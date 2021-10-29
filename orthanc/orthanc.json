@@ -2,10 +2,18 @@
   /**
    * General configuration of Orthanc
    **/
-
+   "PostgreSQL" : {
+    "EnableIndex" : true,
+    "EnableStorage" : true,
+    "Host" : "172.17.0.2",
+    "Port" : 5432,
+    "Database" : "orthanc",
+    "Username" : "postgres",
+    "Password" : "pgpassword"
+  },
   // The logical name of this instance of Orthanc. This one is
   // displayed in Orthanc Explorer and at the URI "/system".
-  "Name" : "${ORTHANC_NAME} in Docker Compose",
+  "Name" : "Orthanc inside Docker",
 
   // Path to the directory that holds the heavyweight files (i.e. the
   // raw DICOM instances). Backslashes must be either escaped by
