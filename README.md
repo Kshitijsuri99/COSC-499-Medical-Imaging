@@ -33,6 +33,11 @@ The proposed process will set up two new servers using open-source software call
 
 This project will save Dr. Rajapakshe time, and allow for a faster release of new anonymized DICOM files. Instead of having to wait 6 months for new scans, the scans will be available to research almost as soon as the scan itself is complete.
 
-# High Level Architecture
-
+# Notes:
+- Truncate date, have customizability for this
+- Keep date of birth to year or month 
+- Truncate to middle of the month for date of birth
+- Keep study date as is
+- Truncate date of birth to 15th of the month (allow to adjust if needed)
+- 
 
