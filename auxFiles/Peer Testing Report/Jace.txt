@@ -1,0 +1,14 @@
+Peer Testing Project Report
+
+Explain how the images worked
+A DICOM (Digital Imaging and Communications in Medicine) file is a protocol that contains a header and image data packet into a single file. The way the information is stored within the header, it is organized as a standardized series of tags. These tags contain information regarding the patient such as demographics, research parameters etc.
+
+Verified the integrity of the images.
+In order for the pipeline to work correctly, the un-anonymized portions of data must match the data of the original DICOM file. It is important that the file’s integrity is not compromised during the pipeline’s process.
+
+What part of the system is more dangerous
+The possible dangers behind our system are the possible security flaws that might arise with our anonymization pipeline. The safety, security, and anonymity of patients' data are extremely crucial and must be protected as much as possible.
+
+Add more unit tests
+There are several unit tests that we must continue to add such as checking the anonymity of data, as well as correctness of data compared to the original un-anonymized DICOM file. These will be one of the first implementations for unit tests, since they are crucial to the integrity of the files. 
+
