@@ -1,0 +1,42 @@
+Peer Testing Project Report
+
+Explain how the images worked
+A DICOM (Digital Imaging and Communications in Medicine) file is a protocol that contains a header and image data packet into a single file. The way the information is stored within the header, it is organized as a standardized series of tags. These tags contain information regarding the patient such as demographics, research parameters etc.
+
+Explain how the setup worked
+The proposed process will set up two new servers using open-source software called Orthanc. Once the mammography scan is complete the DICOM file will be sent to the first Orthanc server (via DIMSE protocol) which will store the confidential metadata, anonymize the DICOM file, and create a random new ID to connect the patient health information to the anonymized DICOM file. The anonymized DICOM file is then sent to another Orthanc server. This server has a GUI (Graphical User Interface) which will be used by researchers to download the x-ray scans and perform analysis.
+
+Verified the integrity of the images.
+In order for the pipeline to work correctly, the un-anonymized portions of data must match the data of the original DICOM file. It is important that the file’s integrity is not compromised during the pipeline’s process.
+
+Industry standard 
+According to the industry standards we need a functional pipeline for x-ray images to provide mammography scans to experts to analyze using AI for Cancer prediction of the breast tissue.
+Currently our project does meet the in progress industry standards set for the pipeline we are trying to build. 
+
+What part of the system is more dangerous
+The possible dangers behind our system are the possible security flaws that might arise with our anonymization pipeline. The safety, security, and anonymity of patients' data are extremely crucial and must be protected as much as possible.
+
+Add more unit tests
+There are several unit tests that we must continue to add such as checking the anonymity of data, as well as correctness of data compared to the original un-anonymized DICOM file. These will be one of the first implementations for unit tests, since they are crucial to the integrity of the files. 
+
+What parts of the code to test
+The most important part of the codes to test would be the anonymization process as we need to check that for edge cases to make sure that the software still works and doesn’t break even if there is an error caused by incorrect type of information or incorrect information itself
+
+Current set of features
+Our project so far is at a place where one Dicom Orthanc server is able to communicate with the second Dicom Orthanc server where we can upload images and we can receive it on the other end of the second server. This is a pretty important milestone of the project as this gives us a platform to develop and work on adding the anonymization process code.
+
+Mention activities that we did during the week
+Final report
+Group meeting on Thursday to discuss future plans, implementations, and ideas. 
+Tested that files worked by uploading them onto a DICOM reader.
+
+Issues discovered during tests 
+Insecure setup
+Wrong Data Types
+Corrupt Dataxs
+
+Solutions to Issues
+The Orthanc server accepted remote connections but used the default username and password. The issue was fixed by simply first registering an administrator account, and then removing access to the default user. Although, this issue is not a big one since the setup will be done by the client once the software has been completed.  
+We need to check for the datatype of the file uploaded and confirm with the internal systems if the file is compatible or not and if not compatible need to inform and warn the user accordingly
+For any user uploading corrupt data files we need to make sure that files are executable and readable so that they don’t end up becoming bad data. We can do that by opening the file with a headless explorer and checking if the all the data required is present 
+
