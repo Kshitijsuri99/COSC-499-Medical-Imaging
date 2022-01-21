@@ -1,1 +1,2 @@
 Created Docker server on local machine
+set up orthanc with docker
