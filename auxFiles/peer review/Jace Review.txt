@@ -8,9 +8,9 @@ Kshitij
 	Evaluations
 		Contribution to group goals: 4
 		Quality of Individual contributions: 4
-		Effort and Participation: 3
-		Consideration of others: 4
-		Contribution of knowledge: 4
+		Effort and Participation: 4
+		Consideration of others: 3
+		Contribution of knowledge: 3
 		Working and sharing with others: 4
 Daniil
 	Pros
@@ -18,12 +18,12 @@ Daniil
 		Before our group meeting, we had some miscommunication which caused a conflict, which is now resolved!
 		He is knowledgable about our project and goes out of his way to search for various alternative solutions to our problems which is amazing.
 	Cons
-		Sometimes does too much work leaving us with less to do, or eats into our specific roles <- this has been resolved.
+		None. Past issues have been resolved.
 	
 	`Evaluations
 		Contribution to group goals: 5
 		Quality of Individual contributions: 5
 		Effort and Participation:4
-		Consideration of others:2
+		Consideration of others:3
 		Contribution of knowledge: 4
 		Working and sharing with others: 3
