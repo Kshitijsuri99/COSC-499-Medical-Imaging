@@ -1,5 +1,5 @@
 {
-  "Name": "Orthanc-modality",
+  "Name": "Orthanc-server1",
 	"RemoteAccessAllowed" : true,
 	"AuthenticationEnabled" : true,
 	"RegisteredUsers" : {

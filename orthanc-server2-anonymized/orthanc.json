@@ -1,5 +1,5 @@
 {
-  "Name": "Orthanc-pacs",
+  "Name": "Orthanc-server-anon",
 	"RemoteAccessAllowed" : true,
 	"AuthenticationEnabled" : true,
 	"RegisteredUsers" : {
@@ -12,7 +12,7 @@
   "LuaScripts" : [
     "/etc/share/orthanc/scripts/modify.lua"
   ],
-  "OverwriteInstances": true, // this is very important in order to upload a modified version of the instance !
+  "OverwriteInstances": true, 
   "StableAge" : 3
 
 
