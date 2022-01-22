@@ -7,6 +7,22 @@ Authors:
 2. Daniil Khodosko
 3. Jace Lai
 
+# Quick Tour
+- ```auxFiles``` contains documentation
+- ```auxFiles/MeetingNotes/``` contains our weekly sprint notes and client notes
+
+# How To Use
+We have a two orthanc server setup. 
+
+First launch both servers using:
+
+```docker-compose up --build```
+
+Next send DICOM images to Orthanc-server1, from here Orthanc-server1 saves the files, and routes them to Orthanc-server2-anonymized.
+
+Orthanc-server1 is running on http://localhost:8044 
+
+Orthanc-server2-anonymized is running on http://localhost:8042
 
 # Purpose 
 The project aims at creating an automated x-ray image pipeline, to provide mammography scans to experts to analyze using AI for cancer prediction of the breast tissue. 
