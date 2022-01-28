@@ -1,3 +1,18 @@
 Basics About SQL Server
 SQL Server is the widely being used relational database management system as it allows to store large amount of data in the relational tables. Users can create any number of tables with different fields to store the data in a consistent manner. The organizations which handles thousands of records in a database can easily make the use of a special kind of table known as SQL Server lookup tables to maintain the data integrity among large number of records. It can be basically considered as a reference to link the related tables with the help of a unique primary key. The lookup tables in SQL Server can also be called as reference table as the data in lookup table is referenced from other related tables.
 
+Importance of Using Lookup Tables in SQL Server
+
+Lookup tables play a considerable role in maintaining the data integrity of the entire database. Users are advised to make use of lookup tables to easily manage large database. Some of the advantages of using lookup table in SQL are:
+
+1. Storage Management
+Since, lookup tables store the frequently repeating data as a reference to the main table. So, it prevents the repetition of same data in the main table and helps to save the memory.
+
+2. Better Performance
+When a query is made, the data can be easily referenced from the lookup table. So, it improves the performance of the system by utilizing less I/O resources, memory & CPU utilization.
+
+3. Easy Data Modification
+If any changes are to be made to a field, then they can be easily made at once on the lookup table. It will automatically update the referenced fields of the main table. So, in this way lookup tables help to easily modify the data by maintaining data integrity.
+
+4. Faster Search
+As the lookup table in SQL server has small size due to limited columns, so it becomes easy for user to search within the limited data from the lookup table and save time.
