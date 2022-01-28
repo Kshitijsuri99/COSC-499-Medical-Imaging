@@ -1,0 +1,3 @@
+Basics About SQL Server
+SQL Server is the widely being used relational database management system as it allows to store large amount of data in the relational tables. Users can create any number of tables with different fields to store the data in a consistent manner. The organizations which handles thousands of records in a database can easily make the use of a special kind of table known as SQL Server lookup tables to maintain the data integrity among large number of records. It can be basically considered as a reference to link the related tables with the help of a unique primary key. The lookup tables in SQL Server can also be called as reference table as the data in lookup table is referenced from other related tables.
+
