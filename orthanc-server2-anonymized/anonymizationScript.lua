@@ -86,21 +86,21 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       --Derivation Description	(0008,2111)	
       modifyRequest["Replace"]["0008,2111"] = "1"
       --Request Attributes Sequence	(0040,0275)
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0040,0275"] = "1"
       --Patient's Name	(0010,0010)	
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0010,0010"] = "1"
       --UID	(0040,A124)
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0040,A124"] = "1"
       --Patient ID	(0010,0020)	
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0010,0020"] = "1"
       --Content Sequence	(0040,A730)
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0040,A730"] = "1"
       --Patient's Birth Date 	(0010,0030)	
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0010,0030"] = "1"
       --Storage Media File-set UID	(0088,0140)
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0088,0140"] = "1"
       --Patient's Birth Time	(0010,0032)	
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0010,0032"] = "1"
       --Referenced Frame of Reference UID	(3006,0024)
       modifyRequest["Replace"]["0008,001030"] = "1"
       --Patient's Sex	(0010,0040)	
