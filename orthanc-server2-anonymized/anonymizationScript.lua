@@ -32,6 +32,16 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       -- Study Description
       modifyRequest["Replace"]["0008,001030"] = "1"
 
+      --Other Patient Ids	(0010,1000)
+      --Other Patient Names	(0010,1001)
+      --Patient's Age	(0010,1010)
+      --Patient's Size	(0010,1020)
+      --Patient's Weight	(0010,1030)
+      --Medical Record Locator	(0010,1090)
+      --Ethnic Group	(0010,2160)
+      --Occupation	(0010,2180)
+      --Additional Patient's History	(0010,21B0)
+      --Patient Comments	(0010,4000)
       --Series Description	(0008,103E)	
       --Device Serial Number	(0018,1000)
       --Institutional Department name	(0008,1040)	
@@ -58,6 +68,9 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       --Storage Media File-set UID	(0088,0140)
       --Patient's Birth Time	(0010,0032)	
       --Referenced Frame of Reference UID	(3006,0024)
+      --Patient's Sex	(0010,0040)	
+      --Related Frame of Reference UID	(3006,00C2)
+
 
       modifyRequest["Replace"]["SOPInstanceUID"] = tags["SOPInstanceUID"]
       modifyRequest["Force"] = true  -- because we want to keep the same SOPInstanceUID
