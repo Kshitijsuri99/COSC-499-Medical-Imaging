@@ -4,3 +4,4 @@ read up on server sided scripting with lua and configuring docker with orthanc.
 
 researched anyonymization
 researched pointer systems and how to retrieve the unanonymized data from the anonymized data securely.
+planned next weeks schedule and preparing the two orthanc servers
