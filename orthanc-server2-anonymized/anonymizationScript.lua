@@ -102,11 +102,11 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       --Patient's Birth Time	(0010,0032)	
       modifyRequest["Replace"]["0010,0032"] = "1"
       --Referenced Frame of Reference UID	(3006,0024)
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["3006,0024"] = "1"
       --Patient's Sex	(0010,0040)	
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0010,0040"] = "1"
       --Related Frame of Reference UID	(3006,00C2)
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["3006,00C2"] = "1"
 
 
       modifyRequest["Replace"]["SOPInstanceUID"] = tags["SOPInstanceUID"]
