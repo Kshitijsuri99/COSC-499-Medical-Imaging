@@ -1,0 +1,48 @@
+﻿Week
+	Date
+	Completed Tasks
+	15
+	
+
+	
+
+	16
+	Jan 28th
+	Basic product completed. Two orthanc servers setup with with simple anonymization pipeline.
+	17
+	Feb4th
+	Testing. Anonymization script refined. Added anonymization to follow specifications of client.
+	18
+	Feb 11th
+	Testing and cross walk table development.
+	19
+	Feb 18th
+	Cross walk table development.
+	20
+	
+
+	Midterm break
+	21
+	March 2nd - March 4th 
+	Basic anonymization pipeline with cross walk table. (Peer Testing #2
+Video Demo)
+	22
+	March 11th
+	Testing and Documentation
+	23
+	March 18th
+	Edge case handling 
+	24
+	March 25th
+	Edge case handling: Patient mismatches
+	25
+	April 1st
+	ODBC: adding capability for any database (Tentative)
+	26
+	April 6 - April 8
+	Wrap-Up
+Bug Testing, Product Testing,
+Function Tests
+	27
+	April 22 - April 24
+	Milestone 4: - Final Product
