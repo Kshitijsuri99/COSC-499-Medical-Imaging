@@ -32,6 +32,33 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       -- Study Description
       modifyRequest["Replace"]["0008,001030"] = "1"
 
+      --Series Description	(0008,103E)	
+      --Device Serial Number	(0018,1000)
+      --Institutional Department name	(0008,1040)	
+      --Protocol Name	(0018,1030)
+      --Physician(s) of Record	(0008,1048)	
+      --Study Instance UID	(0020,000D)
+      --Performing Physicians' Name	(0008,1050)	
+      --Series Instance UID	(0020,000E)
+      --Name of Physician(s) Reading study	(0008,1060)	
+      --Study ID	(0020,0010)
+      --Operator's Name	(0008,1070)	
+      --Frame of Reference UID	(0020,0052)
+      --Admitting Diagnoses Description	(0008,1080)	
+      --Synchronization Frame of Reference UID	(0020,0200)
+      --Referenced SOP Instance UID	(0008,1155)	
+      --Image Comments	(0020,4000)
+      --Derivation Description	(0008,2111)	
+      --Request Attributes Sequence	(0040,0275)
+      --Patient's Name	(0010,0010)	
+      --UID	(0040,A124)
+      --Patient ID	(0010,0020)	
+      --Content Sequence	(0040,A730)
+      --Patient's Birth Date 	(0010,0030)	
+      --Storage Media File-set UID	(0088,0140)
+      --Patient's Birth Time	(0010,0032)	
+      --Referenced Frame of Reference UID	(3006,0024)
+
       modifyRequest["Replace"]["SOPInstanceUID"] = tags["SOPInstanceUID"]
       modifyRequest["Force"] = true  -- because we want to keep the same SOPInstanceUID
 
