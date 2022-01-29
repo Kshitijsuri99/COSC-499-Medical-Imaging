@@ -42,21 +42,21 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       --Patient's Weight	(0010,1030)
       modifyRequest["Replace"]["0008,001030"] = "1"
       --Medical Record Locator	(0010,1090)
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0010,1090"] = "1"
       --Ethnic Group	(0010,2160)
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0010,2160"] = "1"
       --Occupation	(0010,2180)
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0010,2180"] = "1"
       --Additional Patient's History	(0010,21B0)
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0010,21B0"] = "1"
       --Patient Comments	(0010,4000)
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0010,4000"] = "1"
       --Series Description	(0008,103E)	
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0008,103E"] = "1"
       --Device Serial Number	(0018,1000)
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0018,1000"] = "1"
       --Institutional Department name	(0008,1040)	
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0008,1040"] = "1"
       --Protocol Name	(0018,1030)
       modifyRequest["Replace"]["0008,001030"] = "1"
       --Physician(s) of Record	(0008,1048)	
