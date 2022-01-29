@@ -68,25 +68,45 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       --Series Instance UID	(0020,000E)
       modifyRequest["Replace"]["0008,001030"] = "1"
       --Name of Physician(s) Reading study	(0008,1060)	
+      modifyRequest["Replace"]["0008,001030"] = "1"
       --Study ID	(0020,0010)
+      modifyRequest["Replace"]["0008,001030"] = "1"
       --Operator's Name	(0008,1070)	
+      modifyRequest["Replace"]["0008,001030"] = "1"
       --Frame of Reference UID	(0020,0052)
+      modifyRequest["Replace"]["0008,001030"] = "1"
       --Admitting Diagnoses Description	(0008,1080)	
+      modifyRequest["Replace"]["0008,001030"] = "1"
       --Synchronization Frame of Reference UID	(0020,0200)
+      modifyRequest["Replace"]["0008,001030"] = "1"
       --Referenced SOP Instance UID	(0008,1155)	
+      modifyRequest["Replace"]["0008,001030"] = "1"
       --Image Comments	(0020,4000)
+      modifyRequest["Replace"]["0008,001030"] = "1"
       --Derivation Description	(0008,2111)	
+      modifyRequest["Replace"]["0008,001030"] = "1"
       --Request Attributes Sequence	(0040,0275)
+      modifyRequest["Replace"]["0008,001030"] = "1"
       --Patient's Name	(0010,0010)	
+      modifyRequest["Replace"]["0008,001030"] = "1"
       --UID	(0040,A124)
+      modifyRequest["Replace"]["0008,001030"] = "1"
       --Patient ID	(0010,0020)	
+      modifyRequest["Replace"]["0008,001030"] = "1"
       --Content Sequence	(0040,A730)
+      modifyRequest["Replace"]["0008,001030"] = "1"
       --Patient's Birth Date 	(0010,0030)	
+      modifyRequest["Replace"]["0008,001030"] = "1"
       --Storage Media File-set UID	(0088,0140)
+      modifyRequest["Replace"]["0008,001030"] = "1"
       --Patient's Birth Time	(0010,0032)	
+      modifyRequest["Replace"]["0008,001030"] = "1"
       --Referenced Frame of Reference UID	(3006,0024)
+      modifyRequest["Replace"]["0008,001030"] = "1"
       --Patient's Sex	(0010,0040)	
+      modifyRequest["Replace"]["0008,001030"] = "1"
       --Related Frame of Reference UID	(3006,00C2)
+      modifyRequest["Replace"]["0008,001030"] = "1"
 
 
       modifyRequest["Replace"]["SOPInstanceUID"] = tags["SOPInstanceUID"]
