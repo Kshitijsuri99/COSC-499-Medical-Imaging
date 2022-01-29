@@ -3,5 +3,9 @@ set up orthanc with docker
 read up on server sided scripting with lua and configuring docker with orthanc.
 
 researched anyonymization
+	- involved different types and methods to anonymize data
 researched pointer systems and how to retrieve the unanonymized data from the anonymized data securely.
+	- importance of security and ensuring that the pointer is a one way pointer meaning there should be no way to identify the unanonymized data via the anonymized data, but still be able to figure out which anonymized  data is being used from the anonymized data set.
 planned next weeks schedule and preparing the two orthanc servers
+
+
