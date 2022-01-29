@@ -58,33 +58,33 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       --Institutional Department name	(0008,1040)	
       modifyRequest["Replace"]["0008,1040"] = "1"
       --Protocol Name	(0018,1030)
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0018,1030"] = "1"
       --Physician(s) of Record	(0008,1048)	
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0008,1048"] = "1"
       --Study Instance UID	(0020,000D)
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0020,000D"] = "1"
       --Performing Physicians' Name	(0008,1050)	
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0008,1050"] = "1"
       --Series Instance UID	(0020,000E)
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0020,000E"] = "1"
       --Name of Physician(s) Reading study	(0008,1060)	
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0008,1060"] = "1"
       --Study ID	(0020,0010)
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0020,0010"] = "1"
       --Operator's Name	(0008,1070)	
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0008,001070"] = "1"
       --Frame of Reference UID	(0020,0052)
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0020,000052"] = "1"
       --Admitting Diagnoses Description	(0008,1080)	
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0008,001080"] = "1"
       --Synchronization Frame of Reference UID	(0020,0200)
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0020,0200"] = "1"
       --Referenced SOP Instance UID	(0008,1155)	
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0008,1155"] = "1"
       --Image Comments	(0020,4000)
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0020,4000"] = "1"
       --Derivation Description	(0008,2111)	
-      modifyRequest["Replace"]["0008,001030"] = "1"
+      modifyRequest["Replace"]["0008,2111"] = "1"
       --Request Attributes Sequence	(0040,0275)
       modifyRequest["Replace"]["0008,001030"] = "1"
       --Patient's Name	(0010,0010)	
