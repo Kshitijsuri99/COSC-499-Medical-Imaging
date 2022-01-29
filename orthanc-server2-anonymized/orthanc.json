@@ -10,7 +10,7 @@
       "modality": ["MODALITY", "orthanc-modality", 4242]
   },
   "LuaScripts" : [
-    "/etc/share/orthanc/scripts/modify.lua"
+    "/etc/share/orthanc/scripts/anonymizationScript.lua"
   ],
   "OverwriteInstances": true, 
   "StableAge" : 3
