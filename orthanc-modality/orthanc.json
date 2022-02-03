@@ -1,5 +1,5 @@
 {
-  "Name": "Orthanc-server1",
+  "Name": "Orthanc-modality",
 	"RemoteAccessAllowed" : true,
 	"AuthenticationEnabled" : true,
 	"RegisteredUsers" : {
@@ -10,3 +10,4 @@
       "pacs": ["PACS", "orthanc-pacs", 4242]
   }
 }
+
