@@ -4,3 +4,15 @@ Continuous integration (CI) automatically builds, tests, and integrates code cha
 Continuous delivery (CD) automatically delivers code changes to production-ready environments for approval; or
 Continuous deployment (CD) automatically deploys code changes to customers directly.
 
+Why CI/CD?
+The short answer: Speed. The State of DevOps report found organizations that have “mastered” CI/CD deploy 208 times more often and have a lead time that is 106 times faster than the rest. While faster development is the most well-known benefit of CI/CD, a continuous integration and continuous delivery pipeline enables much more.
+
+Learn more about the benefits of CI/CD
+Development velocity
+Ongoing feedback allows developers to commit smaller changes more often, versus waiting for one release.
+
+Stability and reliability
+Automated, continuous testing ensures that codebases remain stable and release-ready at any time.
+
+Business growth
+Freed up from manual tasks, organizations can focus resources on innovation, customer satisfaction, and paying down technical debt.
