@@ -1,0 +1,6 @@
+Automation is a core principle for achieving DevOps success and CI/CD is a critical component. CI/CD comprises of continuous integration and continuous delivery or continuous deployment. Put together, they form a “CI/CD pipeline”—a series of automated workflows that help DevOps teams cut down on manual tasks:
+
+Continuous integration (CI) automatically builds, tests, and integrates code changes within a shared repository; then
+Continuous delivery (CD) automatically delivers code changes to production-ready environments for approval; or
+Continuous deployment (CD) automatically deploys code changes to customers directly.
+
