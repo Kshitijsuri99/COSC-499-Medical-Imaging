@@ -16,3 +16,34 @@ Automated, continuous testing ensures that codebases remain stable and release-r
 
 Business growth
 Freed up from manual tasks, organizations can focus resources on innovation, customer satisfaction, and paying down technical debt.
+
+Building your CI/CD toolkit
+Teams make CI/CD part of their development workflow with a combination of automated process, steps, and tools.
+
+Version control
+CI begins in shared repositories, where teams collaborate on code using version control systems (VCS) like Git. A VCS keeps track of code changes and makes them easy to revert if something breaks. It also enables configuration as code, which allows teams to manage testing, infrastructure, and more as versioned artifacts.
+
+ Version control stack
+Shared coding environments, version control
+
+Learn more about version control
+Builds
+CI build tools automatically package up files and components into release artifacts and run tests for quality, performance, and other requirements. After clearing required checks, CD tools send builds off to the operations team for further testing and staging.
+
+ Continuous integration stack
+General automation, build tools, package managers, testing and code coverage tools
+
+Learn more about CI testing
+Reviews and approvals
+Treating code review as a best practice improves code quality, encourages collaboration, and helps even the most experienced developers make better commits. In a CI/CD workflow, teams review and approve code in pull requests or leverage integrated development environments for pair programming.
+
+ Code review stack
+Collaborative coding, code review tools, automated reminders, pull requests
+
+Learn more about code review
+Environments
+CI/CD tests and deploys code in environments, from where developers build code to where operations teams make applications publicly available. Environments often have their own specific variables and protection rules to meet security and compliance requirements.
+
+ Protected environments stack
+Environments for testing, staging, and production, required reviewers and branch protection rules
+
