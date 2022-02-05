@@ -10,3 +10,4 @@ planned next weeks schedule and preparing the two orthanc servers
 
 
 Researched further on configuring anonymization pointers
+Begin implementation of pointer references
