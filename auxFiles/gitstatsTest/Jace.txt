@@ -9,3 +9,7 @@ researched pointer systems and how to retrieve the unanonymized data from the an
 planned next weeks schedule and preparing the two orthanc servers
 
 
+Researched further on configuring anonymization pointers
+Begin implementation of pointer references
+Ensure that database pointer does not violate temporal and logical consistency
+Verify that no security flaws with pointer references
