@@ -24,6 +24,11 @@ Orthanc-server1 is running on http://localhost:8044
 
 Orthanc-server2-anonymized is running on http://localhost:8042
 
+If prompted for username and password:
+
+Username: demo
+Password: demo
+
 # Purpose 
 The project aims at creating an automated x-ray image pipeline, to provide mammography scans to experts to analyze using AI for cancer prediction of the breast tissue. 
 
