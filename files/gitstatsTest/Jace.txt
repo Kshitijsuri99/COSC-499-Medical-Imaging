@@ -15,3 +15,4 @@ Ensure that database pointer does not violate temporal and logical consistency
 Verify that no security flaws with pointer references
 
 Create the pointer function in the lua script
+Todo: Fill in the pointer function.
