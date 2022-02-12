@@ -148,5 +148,5 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
 
  function createPointerReference(){
       -- todo
-
+      -- make sure to refer to anonymized data through the unanonymized data so its one way
  }
