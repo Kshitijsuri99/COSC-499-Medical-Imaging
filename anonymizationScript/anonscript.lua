@@ -145,3 +145,8 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
     print('reconstructed Index DB data for study ' .. studyId)
  
  end
+
+ function createPointerReference(){
+      -- todo
+
+ }
