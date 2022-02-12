@@ -16,3 +16,4 @@ Verify that no security flaws with pointer references
 
 Create the pointer function in the lua script
 Todo: Fill in the pointer function.
+reverted accidental commit
