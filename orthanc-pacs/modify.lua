@@ -17,6 +17,8 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       modifyRequest["Replace"]["0008,0014"] = "1"
       -- Accession Number
       modifyRequest["Replace"]["0008,0050"] = "1"
+      -- Institution Name
+      modifyRequest["Replace"]["0008,0080"] = "1"
       modifyRequest["Force"] = true  -- because we want to keep the same SOPInstanceUID
 
       -- download a modified version of the instance
