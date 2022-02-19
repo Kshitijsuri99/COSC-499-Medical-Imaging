@@ -12,6 +12,9 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       modifyRequest["Replace"] = {}
       modifyRequest["Replace"]["InstitutionName"] = "Orthanc Demo Hospital"
       modifyRequest["Replace"]["SOPInstanceUID"] = tags["SOPInstanceUID"]
+      modifyRequest["Replace"]["StudyDescription"] = "Demo Description"
+      -- instance creator UID
+      modifyRequest["Replace"]["0008,0014"] = "1"
       modifyRequest["Force"] = true  -- because we want to keep the same SOPInstanceUID
 
       -- download a modified version of the instance
