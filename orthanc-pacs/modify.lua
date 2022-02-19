@@ -10,15 +10,27 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       table.insert(modifyRequest["Remove"], "OperatorsName")
       
       modifyRequest["Replace"] = {}
-      modifyRequest["Replace"]["InstitutionName"] = "Orthanc Demo Hospital"
+      modifyRequest["Replace"]["InstitutionName"] = "noName"
       modifyRequest["Replace"]["SOPInstanceUID"] = tags["SOPInstanceUID"]
-      modifyRequest["Replace"]["StudyDescription"] = "Demo Description"
-      -- instance creator UID
-      modifyRequest["Replace"]["0008,0014"] = "1"
-      -- Accession Number
-      modifyRequest["Replace"]["0008,0050"] = "1"
-      -- Institution Name
-      modifyRequest["Replace"]["0008,0080"] = "1"
+      modifyRequest["Replace"]["StudyDescription"] = "noName"
+
+      -- Institution address 
+      modifyRequest["Replace"]["InstitutionAddress"] = "daniils house"
+      -- Referring Physician's Name
+      modifyRequest["Replace"]["ReferringPhysicianName"] = "noName"
+      -- Station Name
+      modifyRequest["Replace"]["StationName"] = "noName"
+
+      modifyRequest["Replace"]["PatientID"] = "0"
+      modifyRequest["Replace"]["StudyDate"] = "0"
+      modifyRequest["Replace"]["SeriesDate"] = "0"
+
+      modifyRequest["Replace"]["AcquisitionDate"] = "0"
+      modifyRequest["Replace"]["ContentDate"] = "0"
+      modifyRequest["Replace"]["StudyTime"] = "0"
+      modifyRequest["Replace"]["SeriesTime"] = "0"
+
+
       modifyRequest["Force"] = true  -- because we want to keep the same SOPInstanceUID
 
       -- download a modified version of the instance
