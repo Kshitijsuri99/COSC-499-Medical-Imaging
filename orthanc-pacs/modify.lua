@@ -17,11 +17,7 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       -- Institution address 
       modifyRequest["Replace"]["InstitutionAddress"] = "daniils house"
       -- Referring Physician's Name
-      modifyRequest["Replace"]["0008,0090"] = "1"
-      -- Referring Physician's Address
-      modifyRequest["Replace"]["0008,0092"] = "1"
-      -- Referring Physician's Telephone numbers
-      modifyRequest["Replace"]["0008,0094"] = "1"
+      modifyRequest["Replace"]["ReferringPhysicianName"] = "noName"
       -- Station Name
       modifyRequest["Replace"]["0008,001010"] = "1"
       -- Study Description
