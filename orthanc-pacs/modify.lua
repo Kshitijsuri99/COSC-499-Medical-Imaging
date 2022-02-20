@@ -19,16 +19,16 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       -- Referring Physician's Name
       modifyRequest["Replace"]["ReferringPhysicianName"] = "noName"
       -- Station Name
-      modifyRequest["Replace"]["StationName"] = "noName"
+       modifyRequest["Replace"]["StationName"] = "noName"
 
-      modifyRequest["Replace"]["PatientID"] = "0"
-      modifyRequest["Replace"]["StudyDate"] = "0"
-      modifyRequest["Replace"]["SeriesDate"] = "0"
+      -- modifyRequest["Replace"]["PatientID"] = "0"
+      -- modifyRequest["Replace"]["StudyDate"] = "0"
+      -- modifyRequest["Replace"]["SeriesDate"] = "0"
 
-      modifyRequest["Replace"]["AcquisitionDate"] = "0"
-      modifyRequest["Replace"]["ContentDate"] = "0"
-      modifyRequest["Replace"]["StudyTime"] = "0"
-      modifyRequest["Replace"]["SeriesTime"] = "0"
+      -- modifyRequest["Replace"]["AcquisitionDate"] = "0"
+      -- modifyRequest["Replace"]["ContentDate"] = "0"
+      -- modifyRequest["Replace"]["StudyTime"] = "0"
+      -- modifyRequest["Replace"]["SeriesTime"] = "0"
 
 
       modifyRequest["Force"] = true  -- because we want to keep the same SOPInstanceUID
