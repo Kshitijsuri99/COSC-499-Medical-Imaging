@@ -1,3 +1,3 @@
 function OnStoredInstance(instanceId, tags, metadata)
-    SendToModality(instanceId, 'orthanc-pacs')
+    SendToModality(instanceId, 'pacs')
   end

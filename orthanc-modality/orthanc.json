@@ -8,6 +8,10 @@
   "DicomAet": "MODALITY",
   "DicomModalities": {
       "pacs": ["PACS", "orthanc-pacs", 4242]
-  }
+  },
+  "LuaScripts" : [
+    "/etc/share/orthanc/scripts/autoRoute.lua"
+  ],
+  "OverwriteInstances": true, // this is very important in order to upload a modified version of the instance !
+  "StableAge" : 3
 }
-
