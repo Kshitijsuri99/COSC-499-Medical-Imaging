@@ -8,8 +8,8 @@ Authors:
 3. Jace Lai
 
 # Quick Tour
-- ```auxFiles``` contains documentation
-- ```auxFiles/MeetingNotes/``` contains our weekly sprint notes and client notes
+- ```files``` contains documentation
+- ```files/MeetingNotes/``` contains our weekly sprint notes and client notes
 
 # How To Use
 We have a two orthanc server setup. 
@@ -28,6 +28,13 @@ If prompted for username and password:
 
 Username: demo
 Password: demo
+
+# Trouble Shooting
+If you upload or make changes consider building the docker image with no cache using the following commands:
+
+```docker-compose build --no-cache```
+
+
 
 # Purpose 
 The project aims at creating an automated x-ray image pipeline, to provide mammography scans to experts to analyze using AI for cancer prediction of the breast tissue. 
