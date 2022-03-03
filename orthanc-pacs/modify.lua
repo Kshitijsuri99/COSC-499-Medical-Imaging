@@ -19,9 +19,9 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       -- Referring Physician's Name
       modifyRequest["Replace"]["ReferringPhysicianName"] = "noName"
       -- Station Name
-       modifyRequest["Replace"]["StationName"] = "noName"
+      modifyRequest["Replace"]["StationName"] = "noName"
 
-      --modifyRequest["Replace"]["PatientID"] = "000000000000"
+      modifyRequest["Replace"]["PatientID"] = "000000000000"
       -- modifyRequest["Replace"]["StudyDate"] = "0"
       -- modifyRequest["Replace"]["SeriesDate"] = "0"
 
