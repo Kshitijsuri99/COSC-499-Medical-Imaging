@@ -21,15 +21,9 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       -- Station Name
       modifyRequest["Replace"]["StationName"] = "noName"
 
-      -- modifyRequest["Replace"]["PatientID"] = "000000000000"
-      -- modifyRequest["Replace"]["StudyDate"] = "0"
-      -- modifyRequest["Replace"]["SeriesDate"] = "0"
+      -- testing tags 
 
-      -- modifyRequest["Replace"]["AcquisitionDate"] = "0"
-      -- modifyRequest["Replace"]["ContentDate"] = "0"
-      -- modifyRequest["Replace"]["StudyTime"] = "0"
-      -- modifyRequest["Replace"]["SeriesTime"] = "0"
-
+      
 
       modifyRequest["Force"] = true  -- because we want to keep the same SOPInstanceUID
 
