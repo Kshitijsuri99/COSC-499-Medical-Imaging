@@ -32,6 +32,39 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       -- modifyRequest["Replace"]["StudyTime"] = "0"
       -- modifyRequest["Replace"]["SeriesTime"] = "0"
 
+      -- tags to add
+
+       -- instance creator UID
+       modifyRequest["Replace"]["0008,0014"] = "1"
+       -- Accession Number
+       modifyRequest["Replace"]["0008,0050"] = "1"
+       -- Institution Name
+       modifyRequest["Replace"]["0008,0080"] = "1"
+       -- Institution address 
+       modifyRequest["Replace"]["0008,0081"] = "1"
+       -- Referring Physician's Name
+       modifyRequest["Replace"]["0008,0090"] = "1"
+       -- Referring Physician's Address
+       modifyRequest["Replace"]["0008,0092"] = "1"
+       -- Referring Physician's Telephone numbers
+       modifyRequest["Replace"]["0008,0094"] = "1"
+       -- Station Name
+       modifyRequest["Replace"]["0008,001010"] = "1"
+       -- Study Description
+       modifyRequest["Replace"]["0008,001030"] = "1"
+       --Other Patient Ids	(0010,1000)
+       modifyRequest["Replace"]["0010,1000"] = "1"
+       --Other Patient Names	(0010,1001)
+       modifyRequest["Replace"]["0010,1001"] = "1"
+       --Patient's Age	(0010,1010)
+       modifyRequest["Replace"]["0010,1010"] = "1"
+       --Patient's Size	(0010,1020)
+       modifyRequest["Replace"]["0010,1020"] = "1"
+       --Patient's Weight	(0010,1030)
+       modifyRequest["Replace"]["0008,001030"] = "1"
+       --Medical Record Locator	(0010,1090)
+       modifyRequest["Replace"]["0010,1090"] = "1"
+
 
       modifyRequest["Force"] = true  -- because we want to keep the same SOPInstanceUID
 
