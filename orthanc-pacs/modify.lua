@@ -1,4 +1,4 @@
--- This sample shows how to use Orthanc to modify incoming instances.
+-- TODO: add try catch
 
 function OnStoredInstance(instanceId, tags, metadata, origin)
    -- Do not process twice the same file
