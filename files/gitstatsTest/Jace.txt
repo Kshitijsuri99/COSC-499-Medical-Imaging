@@ -14,3 +14,6 @@ Begin implementation of pointer references
 Ensure that database pointer does not violate temporal and logical consistency
 Verify that no security flaws with pointer references
 
+Submitted peer evaulations
+Started peer testing report
+Created seperate crosstable working branch
