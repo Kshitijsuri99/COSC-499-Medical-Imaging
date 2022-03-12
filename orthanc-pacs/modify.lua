@@ -22,6 +22,10 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       modifyRequest["Replace"]["StationName"] = "noName"
 
       modifyRequest["Replace"]["PatientID"] = "000000000000"
+
+      -- Testing new tags
+
+      
       -- modifyRequest["Replace"]["StudyDate"] = "0"
       -- modifyRequest["Replace"]["SeriesDate"] = "0"
 
