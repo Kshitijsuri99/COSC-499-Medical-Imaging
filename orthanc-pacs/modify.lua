@@ -5,10 +5,11 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
    if origin['RequestOrigin'] ~= 'Lua' then
 
       local modifyRequest = {}
-      
+      local crossTable = {}
+
       modifyRequest["Remove"] = {}
       table.insert(modifyRequest["Remove"], "OperatorsName")
-      
+
       modifyRequest["Replace"] = {}
       modifyRequest["Replace"]["InstitutionName"] = "noName"
       modifyRequest["Replace"]["SOPInstanceUID"] = tags["SOPInstanceUID"]
@@ -30,7 +31,6 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       -- modifyRequest["Replace"]["StudyTime"] = "0"
       -- modifyRequest["Replace"]["SeriesTime"] = "0"
 
-
       modifyRequest["Force"] = true  -- because we want to keep the same SOPInstanceUID
 
       -- download a modified version of the instance
@@ -41,6 +41,10 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       -- so when you'll upload it to Orthanc, it will overwrite the old instance only
       -- if you've set the "OverwriteInstances" option to true in your configuration file
       local uploadResponse = ParseJson(RestApiPost('/instances', modifiedDicom))
+
+      local crossTableDicom = addPointerReference(crossTable, instanceId, uploadResponse["ID"])
+      local uploadCrossTable = ParseJson(RestApiPost('/instances', crossTableDicom))
+
 
       -- PrintRecursive(uploadResponse)
       
@@ -65,4 +69,10 @@ function OnStableStudy(studyId, tags, metadata)
 
    print('reconstructed Index DB data for study ' .. studyId)
 
+end
+
+function addPointerReference(crossTable, unanonymizedId, anonymizedId)
+   crossTable["Add"]["OriginalId"] = unanonymizedId
+   crossTable["Add"]["AnonymizedId"] = anonymizedId
+   return RestApiPost('/instances/' .. instanceId .. '/modify', DumpJson(crossTable))
 end
