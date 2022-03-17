@@ -45,7 +45,7 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       
       local crossTableDicom = addPointerReference(crossTable, instanceId, uploadResponse["ID"])
       local uploadCrossTable = ParseJson(RestApiPost('/instances', crossTableDicom))
-      
+
       -- PrintRecursive(uploadResponse)
       
       if (uploadResponse["Status"] == 'AlreadyStored') then
@@ -71,7 +71,7 @@ function OnStableStudy(studyId, tags, metadata)
 
 end
 
-function addPointerReference(crossTable, unanonymizedId, anonymizedId)
+function createCrossTableDicom(crossTable, unanonymizedId, anonymizedId)
    crossTable["Add"]["OriginalId"] = unanonymizedId
    crossTable["Add"]["AnonymizedId"] = anonymizedId
    return RestApiPost('/instances/' .. instanceId .. '/modify', DumpJson(crossTable))
