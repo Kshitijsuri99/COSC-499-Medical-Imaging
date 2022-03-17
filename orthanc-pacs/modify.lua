@@ -45,7 +45,7 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       
       local crossTableDicom = addPointerReference(crossTable, instanceId, uploadResponse["ID"])
       local uploadCrossTable = ParseJson(RestApiPost('/instances', crossTableDicom))
-
+      
       -- PrintRecursive(uploadResponse)
       
       if (uploadResponse["Status"] == 'AlreadyStored') then
