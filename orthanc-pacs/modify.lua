@@ -42,9 +42,9 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       -- if you've set the "OverwriteInstances" option to true in your configuration file
       local uploadResponse = ParseJson(RestApiPost('/instances', modifiedDicom))
 
+      
       local crossTableDicom = addPointerReference(crossTable, instanceId, uploadResponse["ID"])
       local uploadCrossTable = ParseJson(RestApiPost('/instances', crossTableDicom))
-
 
       -- PrintRecursive(uploadResponse)
       
