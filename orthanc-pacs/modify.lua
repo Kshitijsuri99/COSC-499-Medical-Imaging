@@ -43,7 +43,7 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       local uploadResponse = ParseJson(RestApiPost('/instances', modifiedDicom))
 
       
-      local crossTableDicom = addPointerReference(crossTable, instanceId, uploadResponse["ID"])
+      local crossTableDicom = createCrossTableDicom(crossTable, instanceId, uploadResponse["ID"])
       local uploadCrossTable = ParseJson(RestApiPost('/instances', crossTableDicom))
 
       -- PrintRecursive(uploadResponse)
