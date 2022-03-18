@@ -44,7 +44,7 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       -- if you've set the "OverwriteInstances" option to true in your configuration file
       local uploadResponse = ParseJson(RestApiPost('/instances', modifiedDicom))
 
-      integer patientId = uploadResponse["ID"]
+      integer patientId = uploadResponse["PatientID"]
       local integer anonymizedId = anonymizedId(patientId, instanceId)
       modifyRequest["Replace"]["PatientID"] = anonymizedId
 
