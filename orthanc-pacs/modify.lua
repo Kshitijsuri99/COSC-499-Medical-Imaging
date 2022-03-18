@@ -58,6 +58,8 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
 
       print('replaced InstitutionName in instance ' .. instanceId)
 
+      print('referenced instance id:' .. uploadResponse["ID"])
+
    end
 end
 
@@ -72,7 +74,7 @@ function OnStableStudy(studyId, tags, metadata)
 end
 
 function createCrossTableDicom(crossTable, unanonymizedId, anonymizedId)
-   crossTable["Add"]["OriginalId"] = unanonymizedId
-   crossTable["Add"]["AnonymizedId"] = anonymizedId
+   crossTable["Insert"]["OriginalId"] = unanonymizedId
+   crossTable["Insert"]["AnonymizedId"] = anonymizedId
    return RestApiPost('/instances/' .. instanceId .. '/modify', DumpJson(crossTable))
 end
