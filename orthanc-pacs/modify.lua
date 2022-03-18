@@ -6,7 +6,8 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
 
       local modifyRequest = {}
       local crossTable = {}
-      local integer randomId = anonymizedId(instanceId);
+      local hashKey = instanceId;
+      
       
       modifyRequest["Remove"] = {}
       table.insert(modifyRequest["Remove"], "OperatorsName")
@@ -44,8 +45,16 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       local uploadResponse = ParseJson(RestApiPost('/instances', modifiedDicom))
 
       integer patientId = uploadResponse["ID"]
+      local integer anonymizedId = anonymizedId(patientId, instanceId)
+      modifyRequest["Replace"]["PatientID"] = anonymizedId
+
+      modifiedDicom = RestApiPost('/instances/' .. instanceId .. '/modify', DumpJson(modifyRequest))
+      uploadResponse = ParseJson(RestApiPost('/instances', modifiedDicom))
+      
       print ("Patient Id:" .. patientId)
-      --local crossTableDicom = createCrossTableDicom(crossTable, instanceId, uploadResponse["ID"])
+      print("Anonymized Id:".. anonymizedId)
+
+      local crossTableDicom = createCrossTableDicom(crossTable, instanceId, uploadResponse["ID"])
       --local uploadCrossTable = ParseJson(RestApiPost('/instances', crossTableDicom))
 
       -- PrintRecursive(uploadResponse)
@@ -81,7 +90,12 @@ function createCrossTableDicom(crossTable, unanonymizedId, anonymizedId)
    return RestApiPost('/instances/' .. instanceId .. '/modify', DumpJson(crossTable))
 end
 
-function anonymizeId(id)
-   integer newId;
+function anonymizeId(id, hashkey) -- id should be patient id
+   integer newId = id + hashkey;
+   return newId
+end
 
+function unanonymizeId(id, hashkey)
+   integer originalId = id - hashkey;
+   return originalId
 end
