@@ -1,12 +1,13 @@
 -- This sample shows how to use Orthanc to modify incoming instances.
-
+-- GET /tools/generate_uid
 function OnStoredInstance(instanceId, tags, metadata, origin)
    -- Do not process twice the same file
    if origin['RequestOrigin'] ~= 'Lua' then
 
       local modifyRequest = {}
       local crossTable = {}
-
+      local integer randomId = anonymizedId(instanceId);
+      
       modifyRequest["Remove"] = {}
       table.insert(modifyRequest["Remove"], "OperatorsName")
 
@@ -22,7 +23,7 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       -- Station Name
       modifyRequest["Replace"]["StationName"] = "noName"
 
-      -- modifyRequest["Replace"]["PatientID"] = "000000000000"
+      -- modifyRequest["Replace"]["PatientID"] = randomId
       -- modifyRequest["Replace"]["StudyDate"] = "0"
       -- modifyRequest["Replace"]["SeriesDate"] = "0"
 
@@ -42,9 +43,10 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       -- if you've set the "OverwriteInstances" option to true in your configuration file
       local uploadResponse = ParseJson(RestApiPost('/instances', modifiedDicom))
 
-      
-      local crossTableDicom = createCrossTableDicom(crossTable, instanceId, uploadResponse["ID"])
-      local uploadCrossTable = ParseJson(RestApiPost('/instances', crossTableDicom))
+      integer patientId = uploadResponse["ID"]
+      print ("Patient Id:" .. patientId)
+      --local crossTableDicom = createCrossTableDicom(crossTable, instanceId, uploadResponse["ID"])
+      --local uploadCrossTable = ParseJson(RestApiPost('/instances', crossTableDicom))
 
       -- PrintRecursive(uploadResponse)
       
@@ -77,4 +79,9 @@ function createCrossTableDicom(crossTable, unanonymizedId, anonymizedId)
    crossTable["Insert"]["OriginalId"] = unanonymizedId
    crossTable["Insert"]["AnonymizedId"] = anonymizedId
    return RestApiPost('/instances/' .. instanceId .. '/modify', DumpJson(crossTable))
+end
+
+function anonymizeId(id)
+   integer newId;
+
 end
