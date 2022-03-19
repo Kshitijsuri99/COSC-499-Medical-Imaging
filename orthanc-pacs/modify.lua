@@ -1,5 +1,10 @@
+
 -- This sample shows how to use Orthanc to modify incoming instances.
 -- GET /tools/generate_uid
+=======
+-- TODO: add try catch
+
+
 function OnStoredInstance(instanceId, tags, metadata, origin)
    -- Do not process twice the same file
    if origin['RequestOrigin'] ~= 'Lua' then
@@ -24,6 +29,7 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       -- Station Name
       modifyRequest["Replace"]["StationName"] = "noName"
 
+
       -- modifyRequest["Replace"]["PatientID"] = randomId
       -- modifyRequest["Replace"]["StudyDate"] = "0"
       -- modifyRequest["Replace"]["SeriesDate"] = "0"
@@ -32,6 +38,7 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       -- modifyRequest["Replace"]["ContentDate"] = "0"
       -- modifyRequest["Replace"]["StudyTime"] = "0"
       -- modifyRequest["Replace"]["SeriesTime"] = "0"
+=======
 
       modifyRequest["Force"] = true  -- because we want to keep the same SOPInstanceUID
 
@@ -83,6 +90,7 @@ function OnStableStudy(studyId, tags, metadata)
    print('reconstructed Index DB data for study ' .. studyId)
 
 end
+
 
 function createCrossTableDicom(crossTable, unanonymizedId, anonymizedId)
    crossTable["Insert"]["OriginalId"] = unanonymizedId
