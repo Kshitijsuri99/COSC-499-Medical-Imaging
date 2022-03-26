@@ -13,7 +13,7 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       local crossTable = {}
       local hashKey = instanceId;
       
-      
+      -- check if we can do this different:
       modifyRequest["Remove"] = {}
       table.insert(modifyRequest["Remove"], "OperatorsName")
 
@@ -91,6 +91,7 @@ function OnStableStudy(studyId, tags, metadata)
 
 end
 
+-- Cross table implementation below
 
 function createCrossTableDicom(crossTable, unanonymizedId, anonymizedId)
    crossTable["Insert"]["OriginalId"] = unanonymizedId
