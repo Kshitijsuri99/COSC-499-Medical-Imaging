@@ -91,6 +91,7 @@ function OnStableStudy(studyId, tags, metadata)
 
 end
 
+-- Cross table implementation below
 
 function createCrossTableDicom(crossTable, unanonymizedId, anonymizedId)
    crossTable["Insert"]["OriginalId"] = unanonymizedId
