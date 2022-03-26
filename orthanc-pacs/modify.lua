@@ -13,7 +13,7 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       local crossTable = {}
       local hashKey = instanceId;
       
-      
+      -- check if we can do this different:
       modifyRequest["Remove"] = {}
       table.insert(modifyRequest["Remove"], "OperatorsName")
 
