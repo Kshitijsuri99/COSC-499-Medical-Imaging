@@ -12,10 +12,11 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       local modifyRequest = {}
       local crossTable = {}
       local hashKey = instanceId;
+      local modifiedtags = tags;
       
-      
-      modifyRequest["Remove"] = {}
-      table.insert(modifyRequest["Remove"], "OperatorsName")
+      -- modifyRequest["Remove"] = {}
+      -- table.insert(modifyRequest["Remove"], "OperatorsName")
+      modifyRequest["Replace"]["OperatorsName"] = "noName"
 
       modifyRequest["Replace"] = {}
       modifyRequest["Replace"]["InstitutionName"] = "noName"
@@ -64,7 +65,7 @@ function OnStoredInstance(instanceId, tags, metadata, origin)
       local crossTableDicom = createCrossTableDicom(crossTable, instanceId, uploadResponse["ID"])
       --local uploadCrossTable = ParseJson(RestApiPost('/instances', crossTableDicom))
 
-      -- PrintRecursive(uploadResponse)
+      
       
       if (uploadResponse["Status"] == 'AlreadyStored') then
          print("Are you sure you've enabled 'OverwriteInstances' option ?")
@@ -93,6 +94,8 @@ end
 
 
 function createCrossTableDicom(crossTable, unanonymizedId, anonymizedId)
+   table.insert(modifyRequest["Insert"], "OriginalId")
+   table.insert(modifyRequest["Insert"], "AnonymizedId")
    crossTable["Insert"]["OriginalId"] = unanonymizedId
    crossTable["Insert"]["AnonymizedId"] = anonymizedId
    return RestApiPost('/instances/' .. instanceId .. '/modify', DumpJson(crossTable))
@@ -100,10 +103,12 @@ end
 
 function anonymizeId(id, hashkey) -- id should be patient id
    integer newId = id + hashkey;
-   return newId
+   return id
 end
 
 function unanonymizeId(id, hashkey)
    integer originalId = id - hashkey;
+   SendToModality();
    return originalId
+
 end
