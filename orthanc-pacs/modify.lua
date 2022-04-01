@@ -108,7 +108,6 @@ end
 
 function unanonymizeId(id, hashkey)
    integer originalId = id - hashkey;
-   SendToModality();
    return originalId
 
 end
